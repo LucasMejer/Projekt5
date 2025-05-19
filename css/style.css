@@ -2,7 +2,8 @@ body{
     margin: 0px;
 }
 
-nav {
+/* Navbar */
+.mainNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,3 +39,46 @@ li a{
 .activeNav a{
     color: #04AA6D;
 }
+
+#menuUL{
+    display: none;
+}
+
+#burgerMenuUL{
+    display: none;
+    background-color: gray;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.burgerIcon{
+    display: flex;
+    padding: 25px;
+    color: white;
+    justify-content: flex-end
+}
+
+/* Burger Menu */
+
+@media(min-width: 768px) {
+
+    #menuUL{
+        display: flex;
+    } 
+
+    #burgerMenuUL{
+        display: none;
+    }
+
+    .burgerIcon{
+    display: none;
+    }
+
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+} 
