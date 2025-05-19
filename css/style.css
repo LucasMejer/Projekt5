@@ -1,0 +1,40 @@
+body{
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    width: 100vw; 
+}
+
+.navLogo{
+    padding: 25px;
+    color: white;
+}
+
+ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px; 
+}
+
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li a{
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.activeNav a{
+    color: #04AA6D;
+}
