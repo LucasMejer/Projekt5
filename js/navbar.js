@@ -6,16 +6,32 @@ var page = path.split("/").pop();
 
 const menuItems = [
     {
-        displayName: "Home",
+        displayName: "Forside",
         link: "home.html"
     },
     {
-        displayName: "About",
-        link: "about.html"
+        displayName: "Gavekurve",
+        link: "gavekurve.html"
     },
     {
-        displayName: "Contact",
-        link: "contact.html"
+        displayName: "Delikatesser",
+        link: "delikatesser.html"
+    },
+    {
+        displayName: "Interiør",
+        link: "interioer.html"
+    },
+    {
+        displayName: "Kunsthåndværk",
+        link: "kunsthaandvaerk.html"
+    },
+    {
+        displayName: "Kontakt os",
+        link: "kontakt.html"
+    },
+    {
+        displayName: "Kurv",
+        link: "kurv.html"
     },
    
 ];

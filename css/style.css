@@ -20,18 +20,20 @@ body{
     margin: 0px;
 }
 
+/*Lucas CSS Starter Her */
+
 /* Navbar */
 .mainNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #9aad8e;
     width: 100vw; 
 }
 
 .navLogo{
     padding: 25px;
-    color: white;
+    color: #000000;
 }
 
 ul{
@@ -49,13 +51,14 @@ li{
 
 li a{
     display: block;
-    color: #f2f2f2;
+    color: #000000;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .activeNav a{
-    color: #04AA6D;
+    color: #fff200;
+    text-decoration: underline;
 }
 
 #menuUL{
@@ -64,7 +67,7 @@ li a{
 
 #burgerMenuUL{
     display: none;
-    background-color: gray;
+    background-color: #d9d9d9;
     padding: 14px 16px;
     text-decoration: none;
     text-align: center;
@@ -73,7 +76,7 @@ li a{
 .burgerIcon{
     display: flex;
     padding: 25px;
-    color: white;
+    color: #000000;
     justify-content: flex-end
 }
 
@@ -100,6 +103,7 @@ li a{
     }
 
 } 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -217,3 +221,71 @@ summary {
     width: 100%;
   }
 }
+
+/* Produkt Udvalg */
+
+.produktUdvalg{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produktUdvalgOverskrift{
+    padding: 5px;
+    margin: 0px;
+    font-size: 48px;
+}
+
+.produktSortering{
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+    padding: 15px;
+}
+
+.produktUdvalgDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produktUdvalgBillede{
+    height: 80vh;
+}
+
+.produktUdvalgTekst{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+}
+
+@media(min-width: 768px) {
+
+    .produktUdvalgBillede{
+    height: 25vh;
+    }
+
+    .produktSortering{
+    display: flex;
+    justify-content: flex-start;
+    width: 85vw;
+    }
+
+    .produktUdvalgTekst{
+    font-size: 18px;
+    }
+
+    .produktUdvalgDiv{
+    margin: 15px;
+    }
+
+    .produktUdvalgAll{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90vw;
+    }
+
+} 
