@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bagsværd Lakrids</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/produkt.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+</head>
+<body>
+  <header>
+          <nav>
+                <div class="mainNav">
+                    <a class="navLogo">
+                      Logo
+                    </a>
+                    <a class="burgerIcon" onclick="burgerMenuFunction()">
+                        Burger
+                    </a>
+                    <ul id="menuUL">
+                    </ul>
+                </div>
+                <ul id="burgerMenuUL">
+                </ul>
+            </nav>
+    <nav class="breadcrumbs">
+      <a href="/">Forside</a> &gt;
+      <a href="/delikatesser">Delikatesser</a> &gt;
+      <span aria-current="page">Bagsværd Lakrids</span>
+    </nav>
+  </header>
+
+  <main class="product-page">
+    <section class="product-grid">
+      <section class="product-gallery">
+        <figure class="gallery">
+          <!-- Gallery and Thumbnails -->
+          <div class="gallery-grid">
+            <div class="thumbnails" role="list">
+              <img src="images/bclassic.jpg" data-index="0" alt="Bagsværd Lakrids Classic flavor" />
+              <img src="images/bsalmiak.jpg" data-index="1" alt="Bagsværd Lakrids Salmiak flavor" />
+              <img src="images/bsalt.jpg" data-index="2" alt="Bagsværd Lakrids Salt flavor" />
+              <img src="images/bsød.jpg" data-index="3" alt="Bagsværd Lakrids Sød flavor" />
+            </div>
+            <img src="images/bclassic.jpg" alt="Bagsværd Lakrids" class="main-img" id="mainImage" />
+          </div>
+        </figure>
+      </section>
+
+      <section class="product-info">
+        <h1>Bagsværd Lakrids</h1>
+        <p class="price">75 DKK</p>
+        <p class="description">
+          Lakridsplader fra bagsværd...
+        </p>
+
+        <div class="variants">
+          <p><strong>Variant</strong></p>
+          <div class="variant-buttons">
+            <button aria-pressed="false">Salt</button>
+            <button aria-pressed="true" class="active">Classic</button>
+            <button aria-pressed="false">Salmiak</button>
+            <button aria-pressed="false">Sød</button>
+          </div>
+        </div>
+
+        <button class="add-to-cart" aria-label="Add Bagsværd Lakrids to the shopping cart">Tilføj til kurv</button>
+
+        <!-- Accordion directly below the "Add to Cart" button -->
+        <section class="accordion">
+          <details open>
+            <summary>Om produktet</summary>
+            <p>Vælg mellem fire forskellige pakker af fantastisk smagende lakrids...</p>
+            <ul>
+              <li>Salt</li>
+              <li>Salmiak</li>
+              <li>Classic</li>
+              <li>Sød</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Indhold</summary>
+            <p>
+              Ingredienser (DK/NO/SE): Sukker, glucosesirup, sødet/sötad kondenseret mælk/mjölk, helt hærdet palmekerneolie, pulveriseret rålakrids, salmiak, havsalt, vegetabilsk emulgator/emulgeringsmedel: mono-og diglycerider, farve/färg: vegetabilsk kul/kol, overfladebehandlet/ytbehandlad (shellak).
+            </p>
+            <p>
+              Næringsindhold pr 100 g:<br />
+              Energi:  1806 kJ/430 kcal<br />
+              Fedt:  16 g<br />
+              Mættede fedtsyrer: 14 g<br />
+              Kulhydrat:  69 g<br />
+              Heraf sukkerarter:  50 g<br />
+              Protein: 	2,4 g<br />
+              Salt:	0,8 g
+            </p>
+          </details>
+        </section>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
