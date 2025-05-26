@@ -96,7 +96,7 @@ li a{
     display: none;
     }
 
-    nav {
+    .navbarNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
