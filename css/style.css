@@ -424,13 +424,20 @@ body {
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card img {
     width: 100%;
-    max-width: 150px;
-    height: auto;
-    margin: 0 auto;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 0.8rem;
+}
+
+.product-card h3,
+.product-card p {
+    margin: 0.3rem 0;
 }
 
 .btn-primary {
@@ -468,6 +475,20 @@ body {
     .basket-container {
         max-width: 800px;
         margin: 1rem auto;
+    }
+}
+
+/* Tilpasning til mobil */
+@media (max-width: 480px) {
+    .product-card img {
+        height: 180px; /* Mindre højde på mobil */
+    }
+}
+
+/* Desktop tilpasning */
+@media (min-width: 768px) {
+    .product-card img {
+        height: 300px; /* Større højde på desktop */
     }
 }
 
