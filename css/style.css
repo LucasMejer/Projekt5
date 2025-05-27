@@ -465,7 +465,7 @@ body {
     font-size: 0.9rem;
     line-height: 1.2;
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* Begræns til 1 linje */
+    -webkit-line-clamp: 2; /* Begræns til 2 linjer */
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin: 0.3rem 0;
