@@ -1,11 +1,11 @@
 // Produktdata (mock data)
 const products = [
-    { id: 1, name: 'Wally and Whiz', price: 50.00, image: 'bclassic.jpg', category: 'chokolade' },
-    { id: 2, name: 'Summerbird', price: 125.00, image: 'bclassic.jpg', category: 'chokolade' },
-    { id: 3, name: 'Nyborg Destilleri', price: 79.99, image: 'bclassic.jpg', category: 'chokolade' },
-    { id: 4, name: 'Nicolas Vahe', price: 25.00, image: 'bclassic.jpg', category: 'chokolade' },
+    { id: 1, name: 'Wally and Whiz', price: 50.00, image: 'wallyandwhizpink1.jpg', category: 'chokolade' },
+    { id: 2, name: 'Summerbird', price: 125.00, image: 'summerbird1.jpg', category: 'chokolade' },
+    { id: 3, name: 'Nybro Æblemost', price: 79.99, image: 'nybroæblemost1.jpg', category: 'chokolade' },
+    { id: 4, name: 'Nicolas Vahe', price: 25.00, image: 'nicolasvahe1.jpg', category: 'chokolade' },
     { id: 5, name: 'Bagsværd Lakrids', price: 130.00, image: 'bclassic.jpg', category: 'chokolade' },
-    { id: 6, name: 'Amas Gourmet', price: 65.00, image: 'bclassic.jpg', category: 'chokolade' },
+    { id: 6, name: 'Speedtsberg', price: 65.00, image: 'speedtsberg1.jpg', category: 'chokolade' },
     // Tilføj flere produkter
 ];
 
