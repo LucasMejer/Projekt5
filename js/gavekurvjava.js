@@ -1,7 +1,11 @@
 // Produktdata (mock data)
 const products = [
-    { id: 1, name: 'Wally and Whiz', price: 25.00, category: 'chokolade' },
-    { id: 2, name: 'Summerbird', price: 25.00, category: 'chokolade' },
+    { id: 1, name: 'Wally and Whiz', price: 50.00, category: 'chokolade' },
+    { id: 2, name: 'Summerbird', price: 125.00, category: 'chokolade' },
+    { id: 3, name: 'Nyborg Destilleri', price: 79.99, category: 'chokolade' },
+    { id: 4, name: 'Nicolas Vahe', price: 25.00, category: 'chokolade' },
+    { id: 5, name: 'Bagsværd Lakrids', price: 130.00, category: 'chokolade' },
+    { id: 6, name: 'Amas Gourmet', price: 65.00, category: 'chokolade' },
     // Tilføj flere produkter
 ];
 
@@ -39,6 +43,26 @@ function addToBasket(productId) {
     updateBasketDisplay();
 }
 
+// Ny funktion til at fjerne enkelte items
+function removeSingleItem(productId) {
+    const index = basket.findIndex(item => item.id === productId);
+    
+    if(index !== -1) {
+        if(basket[index].quantity > 1) {
+            basket[index].quantity--;
+        } else {
+            basket.splice(index, 1);
+        }
+        updateBasketDisplay();
+    }
+}
+
+// Ny funktion til at fjerne alle items af et produkt
+function removeAllItems(productId) {
+    basket = basket.filter(item => item.id !== productId);
+    updateBasketDisplay();
+}
+
 function updateBasketDisplay() {
     const basketItems = document.querySelector('.basket-items');
     let total = 0;
@@ -46,9 +70,14 @@ function updateBasketDisplay() {
     basketItems.innerHTML = basket.map(item => `
         <div class="basket-item">
             <span>${item.name}</span>
-            <button onclick="adjustQuantity(${item.id}, -1)">-</button>
-            <span>${item.quantity}</span>
-            <button onclick="adjustQuantity(${item.id}, 1)">+</button>
+            <div class="quantity-controls">
+                <button class="btn-remove" onclick="removeSingleItem(${item.id})">-</button>
+                <span class="quantity">${item.quantity}</span>
+                <button class="btn-add" onclick="addToBasket(${item.id})">+</button>
+            </div>
+            <button class="btn-trash" onclick="removeAllItems(${item.id})" aria-label="Fjern alle">
+                🗑️
+            </button>
         </div>
     `).join('');
     
@@ -58,3 +87,4 @@ function updateBasketDisplay() {
 
 // Initialisering
 document.addEventListener('DOMContentLoaded', initProducts);
+
