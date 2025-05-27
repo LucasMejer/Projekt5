@@ -104,11 +104,14 @@ li a{
 
 } 
 
+/* Nikolajs CSS starter her */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 
 main {
   font-family: Arial, sans-serif;
@@ -290,6 +293,9 @@ summary {
     }
 
 } 
+
+/*nikolajs css slutter her*/
+
 
 /*Johannes CSS Starter Her */
 
