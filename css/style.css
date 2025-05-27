@@ -494,12 +494,14 @@ body {
 @media (min-width: 768px) {
     .product-grid {
         grid-template-columns: repeat(3, 200px);
-        gap: 2rem;
+        gap: 3rem;
+        padding: 2rem 4rem;
     }
     
     .product-card {
         width: 200px;
         height: 300px;
+        padding: 1.5rem;
     }
 
     .product-card img {
