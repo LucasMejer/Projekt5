@@ -1,11 +1,11 @@
 // Produktdata (mock data)
 const products = [
-    { id: 1, name: 'Wally and Whiz', price: 50.00, category: 'chokolade' },
-    { id: 2, name: 'Summerbird', price: 125.00, category: 'chokolade' },
-    { id: 3, name: 'Nyborg Destilleri', price: 79.99, category: 'chokolade' },
-    { id: 4, name: 'Nicolas Vahe', price: 25.00, category: 'chokolade' },
-    { id: 5, name: 'Bagsværd Lakrids', price: 130.00, category: 'chokolade' },
-    { id: 6, name: 'Amas Gourmet', price: 65.00, category: 'chokolade' },
+    { id: 1, name: 'Wally and Whiz', price: 50.00, image: 'bclassic.jpg', category: 'chokolade' },
+    { id: 2, name: 'Summerbird', price: 125.00, image: 'bclassic.jpg', category: 'chokolade' },
+    { id: 3, name: 'Nyborg Destilleri', price: 79.99, image: 'bclassic.jpg', category: 'chokolade' },
+    { id: 4, name: 'Nicolas Vahe', price: 25.00, image: 'bclassic.jpg', category: 'chokolade' },
+    { id: 5, name: 'Bagsværd Lakrids', price: 130.00, image: 'bclassic.jpg', category: 'chokolade' },
+    { id: 6, name: 'Amas Gourmet', price: 65.00, image: 'bclassic.jpg', category: 'chokolade' },
     // Tilføj flere produkter
 ];
 
@@ -19,7 +19,7 @@ function initProducts() {
     products.forEach(product => {
         const productCard = `
             <div class="product-card">
-                <img src="products/${product.id}.jpg" alt="${product.name}">
+                <img src="images/${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <p>${product.price.toFixed(2)} kr.</p>
                 <button onclick="addToBasket(${product.id})" class="btn-primary">Tilføj</button>
@@ -69,15 +69,15 @@ function updateBasketDisplay() {
     
     basketItems.innerHTML = basket.map(item => `
         <div class="basket-item">
-            <span>${item.name}</span>
+            <span class="product-name">${item.name}</span>
+        
             <div class="quantity-controls">
                 <button class="btn-remove" onclick="removeSingleItem(${item.id})">-</button>
                 <span class="quantity">${item.quantity}</span>
                 <button class="btn-add" onclick="addToBasket(${item.id})">+</button>
             </div>
-            <button class="btn-trash" onclick="removeAllItems(${item.id})" aria-label="Fjern alle">
-                🗑️
-            </button>
+        
+            <button class="btn-trash" onclick="removeAllItems(${item.id})">🗑️</button>
         </div>
     `).join('');
     

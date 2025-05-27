@@ -361,16 +361,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem;
+    gap: 1rem;
+    padding: 0.8rem;
     margin: 0.5rem 0;
     background: white;
-    border-radius: 4px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .quantity-controls {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-shrink: 0;
 }
 
 .btn-remove, .btn-add {
@@ -392,11 +395,20 @@ body {
     cursor: pointer;
     padding: 0.5rem;
     color: #ff4444;
+    margin-left: auto;
 }
 
 .quantity {
     min-width: 30px;
     text-align: center;
+}
+
+.product-name {
+    flex: 1;
+    min-width: 120px;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product-grid {
