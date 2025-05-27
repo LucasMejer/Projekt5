@@ -290,3 +290,67 @@ summary {
     }
 
 } 
+
+/*Johannes CSS Starter Her */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: white;
+    color: #000;
+}
+
+/* Mobile First Approach */
+.basket-container {
+    background: #f5f5f5;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.product-card {
+    border: 1px solid #9aad8e;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn-primary {
+    background: #fff200;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Tilgængelighedsklasser */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Media Query for Desktop */
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .basket-container {
+        max-width: 1200px;
+        margin: 1rem auto;
+    }
+}

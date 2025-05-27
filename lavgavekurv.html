@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Byg din egen unikke gavekurv med håndplukkede delikatesser">
+    <title>Byg din gavekurv - LIWIRA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Simpel navbar -->
+    <nav class="navbar">
+        <a href="/" aria-label="Hjem">LIWIRA</a>
+    </nav>
+
+    <!-- Brødkrumme -->
+    <div class="breadcrumbs" aria-label="Navigationssti">
+        Forside > Gavekurve > Byg din egen
+    </div>
+
+    <!-- Statusbjælke -->
+    <div class="status-bar">
+        <div class="step active">1</div>
+        <div class="step">2</div>
+        <div class="step">3</div>
+        <div class="step">4</div>
+        <div class="step">5</div>
+    </div>
+
+    <!-- Gavekurv container -->
+    <section class="basket-container" aria-labelledby="basket-heading">
+        <h2 id="basket-heading" class="visually-hidden">Din valgte produkter</h2>
+        <div class="basket-items">
+            <!-- Dynamisk indhold fra JS -->
+        </div>
+    </section>
+
+    <!-- Filter/Sorter knapper -->
+    <div class="filter-buttons">
+        <button class="btn-filter" onclick="toggleFilter()">Filtrer efter kategori ↓</button>
+        <button class="btn-filter" onclick="toggleSort()">Sorter efter</button>
+    </div>
+
+    <!-- Produktgrid -->
+    <div class="product-grid">
+        <!-- Dynamisk indhold fra JS -->
+    </div>
+
+    <!-- Total og knapper -->
+    <div class="checkout-section">
+        <div class="total-price">Total: <span id="total">0,00</span> kr.</div>
+        <div class="navigation-buttons">
+            <button class="btn-nav">Forrige trin</button>
+            <button class="btn-nav">Næste trin</button>
+        </div>
+    </div>
+
+    <!-- Simpel footer -->
+    <footer class="footer">
+        <p>© 2025 LIWIRA</p>
+    </footer>
+
+    <script src="js/gavekurvjava.js"></script>
+</body>
+</html>
