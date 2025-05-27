@@ -398,6 +398,8 @@ body {
     margin-left: auto;
 }
 
+
+
 .quantity {
     min-width: 30px;
     text-align: center;
@@ -432,6 +434,22 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Brug hele højden af kortet */
+}
+
+.product-info {
+    flex-grow: 1; /* Fylder resterende plads */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.5rem;
 }
 
 .product-card img {
@@ -444,17 +462,24 @@ body {
 
 .product-card h3,
 .product-card p {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Begræns til 1 linje */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     margin: 0.3rem 0;
 }
 
 .btn-primary {
-    background: #fff200;
+    background: #afafa7;
     color: #000;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 0.5rem;
+    margin-top: auto;
+    white-space: nowrap;
 }
 
 .checkout-section {
