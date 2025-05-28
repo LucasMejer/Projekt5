@@ -18,13 +18,17 @@ function initProducts() {
     
     products.forEach(product => {
         const productCard = `
-            <div class="product-card">
+        <div class="product-card">
+            <div class="product-card-content">
                 <img src="images/${product.image}" alt="${product.name}">
-                <h3>${product.name}</h3>
-                <p>${product.price.toFixed(2)} kr.</p>
-                <button onclick="addToBasket(${product.id})" class="btn-primary">Tilføj</button>
+                <div class="product-info">
+                    <h3>${product.name}</h3>
+                    <p>${product.price.toFixed(2)} kr.</p>
+                    <button onclick="addToBasket(${product.id})" class="btn-primary">Tilføj</button>
+                </div>
             </div>
-        `;
+        </div>
+    `;
         productGrid.innerHTML += productCard;
     });
 }

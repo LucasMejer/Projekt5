@@ -397,6 +397,8 @@ body {
     margin-left: auto;
 }
 
+
+
 .quantity {
     min-width: 30px;
     text-align: center;
@@ -412,12 +414,16 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .product-card {
+    width: 150px;
+    height: 250px;
     background: white;
     border: 1px solid #9aad8e;
     border-radius: 8px;
@@ -425,28 +431,54 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Brug hele højden af kortet */
+}
+
+.product-info {
+    flex-grow: 1; /* Fylder resterende plads */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.5rem;
 }
 
 .product-card img {
-    width: 100%;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    object-position: center;
     margin-bottom: 0.8rem;
 }
 
 .product-card h3,
 .product-card p {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Begræns til 2 linjer */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     margin: 0.3rem 0;
 }
 
 .btn-primary {
-    background: #fff200;
+    background: #afafa7;
     color: #000;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 0.5rem;
+    margin-top: auto;
+    white-space: nowrap;
 }
 
 .checkout-section {
@@ -465,29 +497,45 @@ body {
     justify-content: center;
 }
 
-/* Tilføj disse media queries */
-@media (min-width: 768px) {
-    .product-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .basket-container {
-        max-width: 800px;
-        margin: 1rem auto;
-    }
-}
-
 /* Tilpasning til mobil */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .product-card {
+        width: 150px;
+        height: 250px;
+    }
+
     .product-card img {
-        height: 180px; /* Mindre højde på mobil */
+        width: 150px;
+        height: 150px;
     }
 }
 
 /* Desktop tilpasning */
 @media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 200px);
+        gap: 3rem;
+        padding: 2rem 4rem;
+    }
+    
+    .product-card {
+        width: 200px;
+        height: 300px;
+        padding: 1.5rem;
+    }
+
     .product-card img {
-        height: 300px; /* Større højde på desktop */
+        width: 200px;
+        height: 200px;
+    }
+
+    .basket-container {
+        max-width: 800px;
+        margin: 1rem auto;
     }
 }
 
