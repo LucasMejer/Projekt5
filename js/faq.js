@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
   const faqData = [
     { 
-      question: "Hvem er Kirkens Korshær?", 
-      answer: "vi er…" 
+      question: "Kan i sende gavekurv direkte til modtageren?", 
+      answer: "Ikke endnu men vi men det er noget vi er igang med at kigge på" 
     },
     { 
-      question: "hvordan tjener jeg points?",   
-      answer: "du kan tjene…" 
+      question: "Hvor kommer produkterne fra?",   
+      answer: "Vi har et bredt netværk af samarbejdspartnere, som er dedikerede til at producere kvalitetsvarer til deres kunder." 
     },
     { 
-      question: "chicken?",                     
-      answer: "Jockey!!!" 
+      question: "Kan man selv tilføje ting til gavekurven, hvis man medbringer det til butikken?",                     
+      answer: "Ja! hvis du selv har ting med til butikken kan vi godt tilføje det i gavekurven" 
     }
   ];
 
