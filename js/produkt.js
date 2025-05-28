@@ -1,4 +1,4 @@
-
+// billede gallery
 const imageArray = [
   'images/bclassic.jpg',
   'images/bsalmiak.jpg',

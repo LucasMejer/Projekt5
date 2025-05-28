@@ -206,6 +206,7 @@ li a{
 
 /* Nikolajs CSS starter her */
 
+/* Produkt side */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -277,7 +278,7 @@ padding: 5px;
   border-radius: 10px;
 }
 
-.price {
+.pris {
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0.5rem 0;

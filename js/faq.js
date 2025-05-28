@@ -1,3 +1,4 @@
+// faq page
 document.addEventListener("DOMContentLoaded", function () {
   const faqData = [
     { 
@@ -21,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const questionDiv = document.createElement("div");
     questionDiv.className = "faq-question";
 
-    // wrap the text in a span
+    
     const textSpan = document.createElement("span");
     textSpan.textContent = item.question;
     questionDiv.appendChild(textSpan);
 
-    // now the arrow
+    // pile
     const arrow = document.createElement("span");
     arrow.className = "arrow";
     arrow.textContent = "▶";
