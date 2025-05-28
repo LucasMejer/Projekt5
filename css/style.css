@@ -4,16 +4,13 @@
     --main-bg-color: #ffffff;
     --grey: #d9d9d9;
     --main-text-color: #000000;
-    --main-text-font:
-    
-      
+    --main-text-font:     
 }
 
 
-
-
-
-
+* {
+  font-family: "Noto Sans", sans-serif;
+}
 
 
 body{
@@ -397,7 +394,6 @@ summary {
 /*Johannes CSS Starter Her */
 
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background: white;
