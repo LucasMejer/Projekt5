@@ -4,7 +4,7 @@
     --main-bg-color: #ffffff;
     --grey: #d9d9d9;
     --main-text-color: #000000;
-    --main-text-font:     
+    --main-text-font:"Noto Sans", sans-serif;     
 }
 
 
@@ -223,9 +223,9 @@ li a{
 }
 
 .breadcrumbs {
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-  color: #666;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
 }
 
 .product-grid {
@@ -308,12 +308,18 @@ li a{
   margin-top: 1rem;
   border-top: 1px solid #ccc;
   padding-top: 1rem;
+   * {
+  font-family: "Noto Sans", sans-serif;
+}
 }
 
 summary {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 0.5rem;
+  * {
+  font-family: "Noto Sans", sans-serif;
+}
 }
 
 @media (max-width: 768px) {
@@ -331,7 +337,7 @@ summary {
   max-width: 1170px;
   margin: 2em auto;
   padding: 1em;
-  font-family: var(--main-text-font, sans-serif);
+  font-family:"Noto Sans", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2em;
