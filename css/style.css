@@ -232,6 +232,12 @@ li a{
     color: #666;
 }
 
+.product-info{
+padding: 5px;
+    margin: 0px;
+    font-size: 48px;
+
+}
 .product-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -275,6 +281,15 @@ li a{
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0.5rem 0;
+  font-size: 36px;
+}
+
+.description{
+    font-size: 16px;
+}
+
+.variants{
+    font-size: 24px;
 }
 
 .variant-buttons {
@@ -312,15 +327,18 @@ li a{
   margin-top: 1rem;
   border-top: 1px solid #ccc;
   padding-top: 1rem;
+  font-size: 24px;
    * {
   font-family: "Noto Sans", sans-serif;
 }
+        
 }
 
 summary {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 0.5rem;
+  font-size: 16px;
   * {
   font-family: "Noto Sans", sans-serif;
 }
