@@ -1,8 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
   const faqData = [
-    { question: "Hvem er Kirkens Korshær?", answer: "vi er…" },
-    { question: "hvordan tjener jeg points?",   answer: "du kan tjene…" },
-    { question: "chicken?",                     answer: "Jockey!!!" }
+    { 
+      question: "Hvem er Kirkens Korshær?", 
+      answer: "vi er…" 
+    },
+    { 
+      question: "hvordan tjener jeg points?",   
+      answer: "du kan tjene…" 
+    },
+    { 
+      question: "chicken?",                     
+      answer: "Jockey!!!" 
+    }
   ];
 
   const faqContainer = document.getElementById("faq");
