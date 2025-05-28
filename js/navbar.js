@@ -7,7 +7,7 @@ var page = path.split("/").pop();
 const menuItems = [
     {
         displayName: "Forside",
-        link: "home.html"
+        link: "index.html"
     },
     {
         displayName: "Gavekurve",

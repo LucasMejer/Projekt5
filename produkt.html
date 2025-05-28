@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/produkt.js" defer></script>
   <script src="js/navbar.js" defer></script>
+  <script src="js/kurvpopup.js" defer></script>
 </head>
 <body>
   <header>
@@ -65,7 +66,7 @@
           </div>
         </div>
 
-        <button class="add-to-cart" aria-label="Add Bagsværd Lakrids to the shopping cart">Tilføj til kurv</button>
+        <button class="add-to-cart" id="addToCartBtn" aria-label="Add Bagsværd Lakrids to the shopping cart">Tilføj til kurv</button>
 
         <!-- Accordion directly below the "Add to Cart" button -->
         <section class="accordion">
@@ -100,5 +101,9 @@
       </section>
     </section>
   </main>
+  
+  <!-- Kurv Popup Overlay -->
+    <div id="popupOverlay"></div>
+
 </body>
 </html>

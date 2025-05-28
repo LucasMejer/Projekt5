@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liwira - Kunsthåndværk, Interiør og Delikatesser</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/produkt.js" defer></script>
+    <script src="js/navbar.js" defer></script>
 </head>
 
 <body>
     <header>
-
+        <nav class="navbarNav">
+            <div class="mainNav">
+                <a class="navLogo">
+                      Logo
+                </a>
+                    <a class="burgerIcon" onclick="burgerMenuFunction()">
+                        Burger
+                    </a>
+                <ul id="menuUL">
+                </ul>
+            </div>
+                <ul id="burgerMenuUL">
+                </ul>
+        </nav>
     </header>
 
     <main>
@@ -93,8 +108,11 @@
 
     </main>
 
+        <script src="js/navbar.js"></script>
+
     <footer>
         
     </footer>
+    
 </body>
 </html>
