@@ -7,12 +7,26 @@
     <title>Byg din gavekurv - LIWIRA</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/gavekurvjava.js"></script>
+    <script src="js/navbar.js" defer></script>
 </head>
 <body>
     <!-- Simpel navbar -->
-    <nav class="navbar">
-        <a href="/" aria-label="Hjem">LIWIRA</a>
-    </nav>
+    <header>
+        <nav class="navbarNav">
+            <div class="mainNav">
+                    <a href="index.html" class="navLogo">
+                      <img src="images/liwiraLogo_rundt.png" class="navLogoImage">
+                    </a>
+                    <a class="burgerIcon" onclick="burgerMenuFunction()">
+                        <img src="images/burgermenu.png">
+                    </a>
+                    <ul id="menuUL">
+                    </ul>
+                </div>
+                <ul id="burgerMenuUL">
+                </ul>
+        </nav>
+    </header>
 
     <!-- Brødkrumme -->
     <div class="breadcrumbs" aria-label="Navigationssti">
