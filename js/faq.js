@@ -1,5 +1,6 @@
 // faq page
 document.addEventListener("DOMContentLoaded", function () {
+  // Array
   const faqData = [
     { 
       question: "Har I færdiglavede gavekurve, hvis man ikke selv vil lave en?", 
@@ -16,18 +17,17 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const faqContainer = document.getElementById("faq");
-  if (!faqContainer) return; 
-
+  if (!faqContainer) return;
+ // Loop
   faqData.forEach(item => {
     const questionDiv = document.createElement("div");
     questionDiv.className = "faq-question";
 
-    
     const textSpan = document.createElement("span");
     textSpan.textContent = item.question;
     questionDiv.appendChild(textSpan);
 
-    // pile
+    // arrow
     const arrow = document.createElement("span");
     arrow.className = "arrow";
     arrow.textContent = "▶";
@@ -37,10 +37,16 @@ document.addEventListener("DOMContentLoaded", function () {
     answerDiv.className = "faq-answer";
     answerDiv.textContent = item.answer;
 
-    questionDiv.addEventListener("click", () => {
-      const opening = answerDiv.style.display === "none" || answerDiv.style.display === "";
-      answerDiv.style.display = opening ? "block" : "none";
-      questionDiv.classList.toggle("open", opening);
+    questionDiv.addEventListener("click", function () {
+      
+      if (answerDiv.style.display === "none" || answerDiv.style.display === "") {
+        answerDiv.style.display = "block";
+      } else {
+        answerDiv.style.display = "none";
+      }
+
+      
+      questionDiv.classList.toggle("open", answerDiv.style.display === "block");
     });
 
     faqContainer.appendChild(questionDiv);
