@@ -230,6 +230,65 @@ summary {
   }
 }
 
+/* FAQ */
+.faq-section {
+  max-width: 1170px;
+  margin: 2em auto;
+  padding: 1em;
+  font-family: var(--main-text-font, sans-serif);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+
+.faq-section h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 3rem;
+}
+
+
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0;
+  padding: 1.5em;
+  background-color: #e2e2e2;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question:hover {
+  background-color: #d0d0d0;
+}
+
+.faq-answer {
+  display: none;
+  margin-left: 15px;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: #ffffff;
+  border-left: 3px solid #999;
+  border-radius: 3px;
+  color: var(--main-text-color);
+}
+
+/* FAQ SIDE STORE SKÆRME */
+
+@media(min-width: 768px) {
+  .faq-section{
+    grid-template-columns: 1fr;
+    gap: 2.5em;
+  }
+  .faq-question{
+    padding: 1.5em;
+    font-size: 1.2em;
+  }
+}
+
+/*nikolajs css slutter her*/
+
 /* Produkt Udvalg */
 
 .produktUdvalg{
@@ -298,7 +357,7 @@ summary {
 
 } 
 
-/*nikolajs css slutter her*/
+
 
 
 /*Johannes CSS Starter Her */
