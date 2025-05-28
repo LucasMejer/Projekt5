@@ -11,7 +11,7 @@ const menuItems = [
     },
     {
         displayName: "Gavekurve",
-        link: "gavekurve.html"
+        link: "lavgavekurv.html"
     },
     {
         displayName: "Delikatesser",

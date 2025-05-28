@@ -32,8 +32,12 @@ body{
 }
 
 .navLogo{
-    padding: 25px;
-    color: #000000;
+    padding: 10px;
+}
+
+.navLogoImage{
+    width: 15vw;
+    border-radius: 5px;
 }
 
 ul{
@@ -75,12 +79,15 @@ li a{
 
 .burgerIcon{
     display: flex;
-    padding: 25px;
-    color: #000000;
+    padding: 10px;
     justify-content: flex-end
 }
 
-/* Burger Menu */
+.burgerIcon img{
+    width: 15vw;
+}
+
+/* Navbar media */
 
 @media(min-width: 768px) {
 
@@ -102,7 +109,88 @@ li a{
     align-items: center;
     }
 
+    .navLogo{
+    padding: 5px;
+    }
+
+    .navLogoImage{
+    width: 5vw;
+    }
+
 } 
+
+/* Produkt Udvalg */
+
+.produktUdvalg{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produktUdvalgOverskrift{
+    padding: 5px;
+    margin: 0px;
+    font-size: 48px;
+}
+
+.produktSortering{
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+    padding: 15px;
+}
+
+.produktUdvalgDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produktUdvalgBillede{
+    height: 80vh;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.produktUdvalgTekst{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+}
+
+@media(min-width: 768px) {
+
+    .produktUdvalgBillede{
+    height: 25vh;
+    }
+
+    .produktSortering{
+    display: flex;
+    justify-content: flex-start;
+    width: 85vw;
+    }
+
+    .produktUdvalgTekst{
+    font-size: 18px;
+    }
+
+    .produktUdvalgDiv{
+    margin: 15px;
+    }
+
+    .produktUdvalgAll{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90vw;
+    }
+
+} 
+
+/*Lucas CSS Slutter Her */
 
 /* Nikolajs CSS starter her */
 
@@ -289,73 +377,7 @@ summary {
 
 /*nikolajs css slutter her*/
 
-/* Produkt Udvalg */
 
-.produktUdvalg{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.produktUdvalgOverskrift{
-    padding: 5px;
-    margin: 0px;
-    font-size: 48px;
-}
-
-.produktSortering{
-    display: flex;
-    justify-content: space-between;
-    width: 45vw;
-    padding: 15px;
-}
-
-.produktUdvalgDiv{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.produktUdvalgBillede{
-    height: 80vh;
-}
-
-.produktUdvalgTekst{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 36px;
-}
-
-@media(min-width: 768px) {
-
-    .produktUdvalgBillede{
-    height: 25vh;
-    }
-
-    .produktSortering{
-    display: flex;
-    justify-content: flex-start;
-    width: 85vw;
-    }
-
-    .produktUdvalgTekst{
-    font-size: 18px;
-    }
-
-    .produktUdvalgDiv{
-    margin: 15px;
-    }
-
-    .produktUdvalgAll{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 90vw;
-    }
-
-} 
 
 
 
