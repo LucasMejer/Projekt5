@@ -6,15 +6,15 @@ const imageArray = [
   'images/bsød.jpg'
 ];
 
-const thumbnails = document.querySelectorAll('.thumbnails img');
+const subimage = document.querySelectorAll('.subimage img');
 const mainImage = document.getElementById('mainImage');
 
-thumbnails.forEach(thumb => {
-  thumb.addEventListener('click', () => {
-    const index = parseInt(thumb.getAttribute('data-index'));
+subimage.forEach(sub => {
+  sub.addEventListener('click', () => {
+    const index = parseInt(sub.getAttribute('data-index'));
     mainImage.src = imageArray[index];
 
-    thumbnails.forEach(t => t.classList.remove('active-thumb'));
-    thumb.classList.add('active-thumb');
+    subimage.forEach(t => t.classList.remove('active-sub'));
+    sub.classList.add('active-sub');
   });
 });

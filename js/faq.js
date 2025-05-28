@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const faqData = [
     { 
       question: "Har I færdiglavede gavekurve, hvis man ikke selv vil lave en?", 
-      answer: "Ja! Vi har et flot udvalg af anbefalede gavekurve til forskellige lejligheder." 
+      answer: "Ja! vi har et flot udvalg af andbefalet gavekurve til forskellige lejlighedder" 
     },
     { 
       question: "Hvor kommer produkterne fra?",   
