@@ -498,7 +498,7 @@ body {
     text-overflow: ellipsis;
 }
 
-.product-grid {
+.product-gridJ {
     display: grid;
     gap: 1rem;
     padding: 1rem;
@@ -585,7 +585,7 @@ body {
 
 /* Tilpasning til mobil */
 @media (max-width: 767px) {
-    .product-grid {
+    .product-gridJ {
         grid-template-columns: repeat(2, 150px);
     }
 
@@ -602,7 +602,7 @@ body {
 
 /* Desktop tilpasning */
 @media (min-width: 768px) {
-    .product-grid {
+    .product-gridJ {
         grid-template-columns: repeat(3, 200px);
         gap: 3rem;
         padding: 2rem 4rem;
