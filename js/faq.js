@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const faqData = [
     { 
-      question: "Kan i sende gavekurv direkte til modtageren?", 
-      answer: "Ikke endnu men vi men det er noget vi er igang med at kigge på" 
+      question: "Har I færdiglavede gavekurve, hvis man ikke selv vil lave en?", 
+      answer: "Ja! Vi har et flot udvalg af anbefalede gavekurve til forskellige lejligheder." 
     },
     { 
       question: "Hvor kommer produkterne fra?",   
