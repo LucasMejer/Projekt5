@@ -14,7 +14,7 @@ let basket = [];
 
 // Initialiser produkter
 function initProducts() {
-    const productGrid = document.querySelector('.product-grid');
+    const productGrid = document.querySelector('.product-gridJ');
     
     products.forEach(product => {
         const productCard = `
