@@ -362,6 +362,18 @@ summary {
   color: var(--main-text-color);
 }
 
+.faq-question {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ← push arrow to far right */
+}
+.faq-question .arrow {
+  transition: transform 0.3s ease;
+}
+.faq-question.open .arrow {
+  transform: rotate(90deg);
+}
 /* FAQ SIDE STORE SKÆRME */
 
 @media(min-width: 768px) {

@@ -1,46 +1,39 @@
-// FAQ
 document.addEventListener("DOMContentLoaded", function () {
-  // Array
   const faqData = [
-    {
-      question: "Hvem er Kirkens Korshær?",
-      answer: "vi er en velgørenheds organisation som hjælpe folk med at finde et varmt sted at sove og en god omgang mad, samt er vi ambassadøre for genbrug."
-    },
-    {
-      question: "hvordan tjener jeg points?",
-      answer: "du kan tjene points ved at mælde dig friviligt til en af de mange opgaver på job siden."
-    },
-    {
-      question: "chicken?",
-      answer: "Jockey!!!"
-    }
+    { question: "Hvem er Kirkens Korshær?", answer: "vi er…" },
+    { question: "hvordan tjener jeg points?",   answer: "du kan tjene…" },
+    { question: "chicken?",                     answer: "Jockey!!!" }
   ];
 
   const faqContainer = document.getElementById("faq");
   if (!faqContainer) return; 
 
-  // Loop
-  for (let i = 0; i < faqData.length; i++) {
-    const item = faqData[i];
-
+  faqData.forEach(item => {
     const questionDiv = document.createElement("div");
     questionDiv.className = "faq-question";
-    questionDiv.textContent = item.question;
+
+    // wrap the text in a span
+    const textSpan = document.createElement("span");
+    textSpan.textContent = item.question;
+    questionDiv.appendChild(textSpan);
+
+    // now the arrow
+    const arrow = document.createElement("span");
+    arrow.className = "arrow";
+    arrow.textContent = "▶";
+    questionDiv.appendChild(arrow);
 
     const answerDiv = document.createElement("div");
     answerDiv.className = "faq-answer";
     answerDiv.textContent = item.answer;
 
-    questionDiv.addEventListener("click", function () {
-      if (answerDiv.style.display === "none" || answerDiv.style.display === "") {
-        answerDiv.style.display = "block";
-      } else {
-        answerDiv.style.display = "none";
-      }
+    questionDiv.addEventListener("click", () => {
+      const opening = answerDiv.style.display === "none" || answerDiv.style.display === "";
+      answerDiv.style.display = opening ? "block" : "none";
+      questionDiv.classList.toggle("open", opening);
     });
 
     faqContainer.appendChild(questionDiv);
     faqContainer.appendChild(answerDiv);
-  }
+  });
 });
-//nikolajs js slutter her
